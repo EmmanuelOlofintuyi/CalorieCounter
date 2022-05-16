@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16pt;
+    background: #E5E5E5;
+    color: #212121;
+}
+
+#header {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    background: #2CA5A9;
+    margin: 0;
+    padding: 0 5vw;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 18pt;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    overflow: hidden;
+    height: 48pt;
+}
+
+#header h2 {
+    margin: 0;
+    border-right: 1px solid rgba(229, 229, 229, 0.5);
+    padding: 0 0.5em 0 0;
+    display: inline-block;
+}
+
+#navbar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10pt;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#navbar ul li {
+    text-align: center;
+    padding: 0 1em;
+    font-size: 12pt;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.0);
+    transition: 0.3s ease-in-out;
+}
+
+#navbar a:not(.current):hover {
+    color: #2CA5A9;
+    background: #FFF;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar a:not(.current):active {
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+#navbar a.current {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#content {
+    margin: 1em 5vw;
+}
+
+.card {
+    border: 1px solid #A6BCBD;
+    border-radius: 5px;
+    padding: 0.5em;
+    display: inline-block;
+    max-width: 50vw;
+}
+
+.card-header {
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgba(166, 188, 189, 0.3);
+}
+
+.card-title {
+    margin: 0;
+    font-size: 18pt;
+}
+
+.card-date {
+    margin: 0;
+    font-size: 12pt;
+}
+
+.card-item {
+    display: inline-block;
+    padding: 0.2em;
+    margin-top: 0.5em;
+    border: 1px solid #A6BCBD;
+    border-radius: 3px;
+}
+
+.card-item .item-header {
+    margin: 0;
+    font-size: 14pt;
+}
+
+.card-item .calories {
+    margin: 0;
+    font-size: 12pt;
+    color: rgba(33, 33, 33, 0.66);
+}
