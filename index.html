@@ -26,23 +26,24 @@
         </div>
         <div id="content">
             <p>Lorem ipsum dolor sit amet</p>
-            <div class="card">
-                <div class="card-header">
-                    <p class="card-title">Breakfast</p>
-                    <p class="card-date">May 16, 2022</p>
-                </div>
-                <div class="card-list">
-                    <div class="card-item">
-                        <p class="item-header">Sausage</p>
-                        <p class="calories">120 calories</p>
+            <div id="card-parent">
+                <div class="card edit">
+                    <div class="card-header">
+                        <span>Meal: </span>
+                        <select class="card-title" name="title">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snack">Snack</option>
+                        </select>
                     </div>
-                    <div class="card-item">
-                        <p class="item-header">Egg</p>
-                        <p class="calories">50 calories</p>
+                    <p><button onclick="addItem();">Add Item</button></p>
+                    <div class="card-list">
                     </div>
                 </div>
             </div>
         </div>
         <script src="caloriecounter.js"></script>
+        <script src="db.js"></script>
     </body>
 </html>

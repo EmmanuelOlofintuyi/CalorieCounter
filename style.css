@@ -101,6 +101,10 @@ body {
     font-size: 18pt;
 }
 
+.card.edit .card-title {
+    font-size: 12pt;
+}
+
 .card-date {
     margin: 0;
     font-size: 12pt;
